@@ -1,0 +1,17 @@
+flowchart TD
+    A[Requester submits form] --> B{Required information complete?}
+    B -->|No| C[Needs Information]
+    C --> A
+    B -->|Yes| D[Triage]
+    D --> E{Special review required?}
+    E -->|Funding| F[Finance review]
+    E -->|Sensitive data or elevated risk| G[Security / privacy review]
+    E -->|No| H[Functional fit and capacity review]
+    F --> H
+    G --> H
+    H --> I{Decision}
+    I -->|Approved| J[Approved — Planned]
+    I -->|More information| C
+    I -->|Declined| K[Declined / Withdrawn]
+    J --> L[In Progress]
+    L --> M[Completed]

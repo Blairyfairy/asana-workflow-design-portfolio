@@ -1,0 +1,7 @@
+asana-workflow-design-portfolio/
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── docs/ (8 workflow, governance, interview, and implementation guides)
+├── templates/ (CSV import templates, form schema, rules, approvals, change plan)
+└── diagrams/ (3 Mermaid workflow diagrams)

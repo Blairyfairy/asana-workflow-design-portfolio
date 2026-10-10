@@ -1,0 +1,11 @@
+Field Name,Field Type,Options / Format,Purpose,Required?,Example
+Request Type,Single-select,Technology / Systems;Process / Operations;Customer Experience;Reporting / Analytics;Other,Routes request to relevant reviewer,Yes,Technology / Systems
+Business Impact,Single-select,Enterprise-wide;Department;Team;Individual,Supports prioritization,Yes,Department
+Urgency,Single-select,Critical;High;Normal;Low,Sets review priority; does not bypass approval,Yes,Normal
+Estimated Effort,Single-select,Less than 1 day;1–5 days;1–4 weeks;More than 1 month;Unknown,Helps capacity planning,Yes,1–5 days
+Risk Level,Single-select,High;Medium;Low;Not assessed,Triggers specialist review where needed,Yes,Medium
+Funding Required,Single-select,Yes;No;Unknown,Determines finance review path,Yes,No
+Approval Status,Single-select,Not started;Pending;Approved;Declined;Conditional approval,Records decision state,When applicable,Pending
+Intake Completeness,Single-select,Incomplete;Complete;Needs validation,Controls triage readiness,Yes,Complete
+Decision Date,Date,YYYY-MM-DD,Supports approval cycle-time reporting,When decided,2026-10-30
+Decline Reason,Text,Short rationale,Explains decision and supports learning,When declined,Outside current scope

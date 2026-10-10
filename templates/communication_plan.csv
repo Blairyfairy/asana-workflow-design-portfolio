@@ -1,0 +1,8 @@
+Timing,Audience,Channel,Message / Purpose,Owner,Call to Action,Success Signal
+T-10 business days,Pilot cohort and managers,Email / team channel,"Explain why the workflow is changing, pilot scope, benefits to test, and what is not changing.",Change Lead,Confirm participation and training availability,Pilot cohort confirmed
+T-5 business days,Pilot cohort,Live briefing,"Walk through request lifecycle, roles, status meanings, urgent path, and support route.",Workflow Owner,Review quick-start guide and submit questions,Questions logged and answered
+Launch day,All pilot users,Team channel + pinned guide,"Share form link, instructions, response expectations, and support contact.",Change Lead,Submit new requests through the form,Requests use new intake path
+End of week 1,Pilot cohort,Short survey + office hours,"Collect friction points, confusing fields, routing errors, and training gaps.",Pilot Champion,Submit one improvement suggestion,Feedback log populated
+Mid week 2,Pilot cohort and approvers,Team channel,"Remind users of conventions, approvals, and exception handling.",Workflow Owner,Complete practice scenario and pulse survey,Practice completion recorded
+End of week 2,Sponsor and pilot cohort,Readout meeting,"Share metrics, feedback themes, open issues, and recommendation to continue, revise, or stop.",Change Lead,Review and record go/no-go decision,Decision and owners documented
+After decision,Wider organization,Email / team channel / knowledge base,Communicate pilot outcome and next steps without overstating results.,Executive Sponsor,Follow approved rollout plan,Audience understands timing and support

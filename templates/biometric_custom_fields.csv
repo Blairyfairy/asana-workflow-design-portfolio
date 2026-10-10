@@ -1,0 +1,8 @@
+Field Name,Field Type,Options / Format,Purpose,Required?,Example
+Workstream,Single-select,Governance;Operations;Technology;Privacy;Accessibility;Testing;Change,Group and filter tasks by discipline,Yes,Accessibility
+Priority,Single-select,Critical;High;Medium;Low,Support sequencing and escalation,Yes,High
+Risk Level,Single-select,High;Medium;Low;Not assessed,Make risk review visible,Yes,Medium
+Readiness Status,Single-select,Not started;In progress;Blocked;Ready for review;Accepted;Not applicable,Track readiness and blockers,Yes,Ready for review
+Approval Status,Single-select,Not required;Pending;Approved;Declined;Conditional approval,Make decision state reportable,When applicable,Pending
+Acceptance Evidence,Text or URL,Link to approved evidence repository,Provide traceability without storing sensitive records,When applicable,Project test report URL
+Milestone,Native milestone task type,Use native Asana milestone if available,Mark formal phase gates,No,Approve pilot readiness / go-no-go

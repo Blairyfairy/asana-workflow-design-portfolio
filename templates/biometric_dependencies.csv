@@ -1,0 +1,14 @@
+Predecessor Task,Successor Task,Relationship Rationale,Dependency Type
+Approve project charter and measurable goal,Identify stakeholders and decision owners,Charter establishes scope and decision authority before stakeholder work is finalized.,Finish-to-start
+Document current-state boarding journey,Define operational and system requirements,Requirements should be based on the reviewed current state.,Finish-to-start
+Define privacy and data-handling requirements,Sign off on requirements and safeguards,Privacy requirements must be available for the cross-functional sign-off.,Finish-to-start
+Define accessibility and human fallback requirements,Sign off on requirements and safeguards,Accessibility and fallback requirements are part of the safeguard gate.,Finish-to-start
+Define operational and system requirements,Sign off on requirements and safeguards,Requirements need review before design sign-off.,Finish-to-start
+Sign off on requirements and safeguards,Create pilot test plan and acceptance criteria,Validation plan follows approved requirements.,Finish-to-start
+Create pilot test plan and acceptance criteria,Resolve critical pilot findings,Findings are evaluated against agreed test scenarios and criteria.,Finish-to-start
+Review security and privacy controls,Approve pilot readiness / go-no-go,Readiness decision depends on recorded security and privacy review.,Finish-to-start
+Validate accessibility and fallback scenarios,Approve pilot readiness / go-no-go,Readiness decision depends on accessibility and fallback disposition.,Finish-to-start
+Resolve critical pilot findings,Approve pilot readiness / go-no-go,Critical findings must be resolved or formally dispositioned before decision.,Finish-to-start
+Approve pilot readiness / go-no-go,Run approved pilot and capture outcomes,Pilot execution is prohibited until an authorized go decision.,Finish-to-start
+Run approved pilot and capture outcomes,Evaluate outcomes and recommend next step,Recommendation depends on observed pilot results.,Finish-to-start
+Evaluate outcomes and recommend next step,Publish lessons learned and close project,Closure records the recommendation and sponsor decision.,Finish-to-start

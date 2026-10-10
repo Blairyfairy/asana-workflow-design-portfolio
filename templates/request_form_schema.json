@@ -1,0 +1,268 @@
+{
+  "title": "Phoenix Airlines Project Request Form",
+  "purpose": "Capture complete, routable requests for projects and operational improvements.",
+  "implementation_note": "Specification only. Recreate this in the Asana form editor; direct JSON import is not guaranteed.",
+  "core_questions": [
+    {
+      "id": "request_title",
+      "label": "What do you need?",
+      "type": "short_text",
+      "required": true,
+      "maps_to": "Task Name"
+    },
+    {
+      "id": "requester",
+      "label": "Who is requesting this work?",
+      "type": "person_or_email",
+      "required": true,
+      "maps_to": "Requester"
+    },
+    {
+      "id": "business_problem",
+      "label": "What problem or opportunity are you addressing?",
+      "type": "long_text",
+      "required": true,
+      "maps_to": "Description"
+    },
+    {
+      "id": "desired_outcome",
+      "label": "What outcome would make this successful?",
+      "type": "long_text",
+      "required": true,
+      "maps_to": "Acceptance criteria"
+    },
+    {
+      "id": "request_type",
+      "label": "Which type best describes the request?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "Technology / Systems",
+        "Process / Operations",
+        "Customer Experience",
+        "Reporting / Analytics",
+        "Other"
+      ],
+      "maps_to": "Request Type"
+    },
+    {
+      "id": "business_impact",
+      "label": "Who is affected?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "Enterprise-wide",
+        "Department",
+        "Team",
+        "Individual"
+      ],
+      "maps_to": "Business Impact"
+    },
+    {
+      "id": "urgency",
+      "label": "How urgent is the request?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "Critical",
+        "High",
+        "Normal",
+        "Low"
+      ],
+      "maps_to": "Urgency"
+    },
+    {
+      "id": "funding_required",
+      "label": "Does this require new funding?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "maps_to": "Funding Required"
+    },
+    {
+      "id": "due_date",
+      "label": "Is there a required date? Why?",
+      "type": "long_text",
+      "required": false,
+      "maps_to": "Description"
+    }
+  ],
+  "branches": [
+    {
+      "when": {
+        "field": "request_type",
+        "equals": "Technology / Systems"
+      },
+      "show": [
+        "affected_system",
+        "integration_needs",
+        "data_sensitivity",
+        "technical_owner"
+      ],
+      "questions": [
+        {
+          "id": "affected_system",
+          "label": "Which system or service is affected?",
+          "type": "short_text",
+          "required": true
+        },
+        {
+          "id": "integration_needs",
+          "label": "Are integrations or data exchanges involved?",
+          "type": "yes_no",
+          "required": true
+        },
+        {
+          "id": "data_sensitivity",
+          "label": "Does this involve confidential, regulated, or personal data?",
+          "type": "single_select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "Unsure"
+          ]
+        },
+        {
+          "id": "technical_owner",
+          "label": "Known technical owner (if any)",
+          "type": "short_text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "when": {
+        "field": "request_type",
+        "equals": "Process / Operations"
+      },
+      "show": [
+        "process_name",
+        "frequency",
+        "operational_impact"
+      ],
+      "questions": [
+        {
+          "id": "process_name",
+          "label": "Which process is affected?",
+          "type": "short_text",
+          "required": true
+        },
+        {
+          "id": "frequency",
+          "label": "How often does the process occur?",
+          "type": "single_select",
+          "required": true,
+          "options": [
+            "Daily",
+            "Weekly",
+            "Monthly",
+            "Occasionally"
+          ]
+        },
+        {
+          "id": "operational_impact",
+          "label": "What happens if the process is not improved?",
+          "type": "long_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "when": {
+        "field": "request_type",
+        "equals": "Customer Experience"
+      },
+      "show": [
+        "journey_stage",
+        "accessibility_considerations",
+        "service_impact"
+      ],
+      "questions": [
+        {
+          "id": "journey_stage",
+          "label": "Which customer or passenger journey stage is affected?",
+          "type": "short_text",
+          "required": true
+        },
+        {
+          "id": "accessibility_considerations",
+          "label": "Are accessibility considerations involved?",
+          "type": "long_text",
+          "required": true
+        },
+        {
+          "id": "service_impact",
+          "label": "What service outcome should improve?",
+          "type": "long_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "when": {
+        "field": "funding_required",
+        "equals": "Yes"
+      },
+      "show": [
+        "estimated_amount",
+        "cost_center",
+        "funding_sponsor"
+      ],
+      "questions": [
+        {
+          "id": "estimated_amount",
+          "label": "Estimated amount and currency",
+          "type": "short_text",
+          "required": true
+        },
+        {
+          "id": "cost_center",
+          "label": "Cost center or budget owner",
+          "type": "short_text",
+          "required": true
+        },
+        {
+          "id": "funding_sponsor",
+          "label": "Funding sponsor",
+          "type": "short_text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "when": {
+        "field": "urgency",
+        "equals": "Critical"
+      },
+      "show": [
+        "critical_impact",
+        "escalation_contact"
+      ],
+      "questions": [
+        {
+          "id": "critical_impact",
+          "label": "What immediate business impact makes this critical?",
+          "type": "long_text",
+          "required": true
+        },
+        {
+          "id": "escalation_contact",
+          "label": "Who can validate the urgency?",
+          "type": "short_text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "post_submission": {
+    "initial_state": "New Request",
+    "triage_sla": "Proposed target: initial triage within 3 business days for complete requests.",
+    "notice": "Submitting a request does not guarantee approval or funding.",
+    "privacy": "Do not include credentials, payment details, passenger records, biometric data, or unnecessary personal information."
+  }
+}

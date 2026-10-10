@@ -1,0 +1,6 @@
+Gate,Trigger / scope,Decision owner role,Required evidence,Decision values,Target response,Escalation
+Intake validation,Every submitted request,Request Coordinator,Required questions completed; request outcome clear,Complete; Needs Information,1 business day proposed,Workflow Owner
+Functional fit and capacity,Every complete request,Functional Owner,"Fit, impact, capacity, dependencies",Recommend; Hold; Decline,3 business days proposed,Executive Sponsor
+Finance review,Funding Required = Yes or threshold exceeded,Finance Approver,"Estimate, budget owner, cost center, funding rationale",Approve; Decline; More information,3 business days proposed,Finance Manager
+Security / privacy review,"Sensitive data, elevated risk, or integrations",Security / Privacy Reviewer,Data classification and risk summary in approved repository,Approve; Conditions; Decline; More information,Set by policy,Security / Privacy Lead
+Final prioritization,Requests competing for limited capacity or requiring sponsor decision,Executive Sponsor,"Functional recommendation, effort, impact, risk, funding status",Approved; Deferred; Declined,5 business days proposed,Governance forum

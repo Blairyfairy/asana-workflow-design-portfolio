@@ -1,0 +1,11 @@
+Task Name,Description,Section,Assignee Role,Due Date,Priority,Task Category
+Configure project sections and field definitions,Create workflow states and custom fields using the approved configuration catalog.,Workflow Setup,Workflow Owner,2026-10-20,High,Setup
+Publish request form and branch questions,"Configure core questions and conditional follow-ups for request type, urgency, and funding.",Workflow Setup,Request Coordinator,2026-10-21,High,Setup
+Configure and test routing rules,"Create rules for complete intake, critical urgency, approval outcomes, and overdue tasks.",Workflow Setup,Asana Administrator,2026-10-22,High,Setup
+Define approval roles and service targets,"Confirm approval authorities, response expectations, escalation path, and decision evidence.",Workflow Setup,Executive Sponsor,2026-10-22,High,Setup
+Pilot request intake with representative cases,"Submit standard, incomplete, urgent, funding-required, sensitive-data, approved, and declined test cases.",Pilot and Validation,Pilot Champion,2026-10-27,High,Validation
+Review pilot findings and refine workflow,"Fix routing gaps, unclear questions, duplicate notifications, and reporting issues found in testing.",Pilot and Validation,Workflow Owner,2026-10-29,High,Validation
+Approve workflow for launch,"Review test evidence, training completion, unresolved issues, and support readiness.",Pilot and Validation,Executive Sponsor,2026-10-30,High,Milestone
+Announce workflow and publish quick-start guide,"Communicate where to submit requests, expected information, status definitions, and help channel.",Launch and Adoption,Change Lead,2026-11-02,Medium,Launch
+Monitor intake quality and triage time,"Review intake completeness, aging queue, time to triage, and user feedback.",Continuous Improvement,Request Coordinator,2026-11-13,Medium,Operations
+Publish first workflow performance review,Compare pilot and early rollout measures with baseline; propose prioritized improvements.,Continuous Improvement,Workflow Owner,2026-11-20,Medium,Reporting

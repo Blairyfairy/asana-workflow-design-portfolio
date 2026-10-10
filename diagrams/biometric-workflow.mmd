@@ -1,0 +1,16 @@
+flowchart TD
+    A[Approve project charter and goal] --> B[Document current-state journey]
+    B --> C[Define operational and system requirements]
+    C --> D[Define privacy and data-handling requirements]
+    C --> E[Define accessibility and human fallback]
+    D --> F[Sign off on requirements and safeguards]
+    E --> F
+    F --> G[Create pilot test plan]
+    G --> H[Run authorized reviews and validation]
+    H --> I[Resolve or disposition critical findings]
+    I --> J{Readiness go/no-go}
+    J -->|Go| K[Run approved pilot]
+    J -->|No-go| L[Revise plan and revalidate]
+    L --> G
+    K --> M[Evaluate outcomes]
+    M --> N[Publish lessons learned]

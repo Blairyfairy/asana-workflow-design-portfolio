@@ -1,0 +1,8 @@
+Rule Name,Trigger,Condition,Action,Owner,Test Case,Guardrail
+Route complete requests to triage,Task added or Intake Completeness changes,Intake Completeness = Complete,Move to Triage; assign Request Coordinator; notify triage group,Asana Administrator,Submit a complete standard request,Do not move incomplete requests to triage
+Flag incomplete requests,Task created or form submitted,Intake Completeness = Incomplete,Move to Needs Information; assign Request Coordinator; notify requester,Asana Administrator,Omit a required detail in a test case,Avoid sending duplicate reminders
+Escalate critical urgency,Urgency changes,Urgency = Critical,Notify Workflow Owner and Request Coordinator; add high-priority review task or flag,Asana Administrator,Submit a critical request,Urgency accelerates review but never skips required approvals
+Route funding review,Funding Required changes,Funding Required = Yes,Notify Finance Approver and add finance review step,Asana Administrator,Submit funding-required request,Use the approved finance threshold and policy
+Process approved request,Approval Status changes,Approval Status = Approved,Move to Approved — Planned; notify requester and delivery owner,Asana Administrator,Record an approved decision,Only authorized approver may record approval
+Process declined request,Approval Status changes,Approval Status = Declined,Move to Declined / Withdrawn; request decline reason; notify requester,Asana Administrator,Record a decline decision,Do not close without a reason or approved exception
+Escalate overdue task,Due date passes,Task incomplete,Notify assignee and coordinator; flag for queue review,Asana Administrator,Create an overdue test task,Set reminder cadence to avoid notification fatigue
